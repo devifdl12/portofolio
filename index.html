@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Website Profesional">
+    <title>Portofolio - Devi Nurul Fadhila</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- SIDEBAR NAVIGATION -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <!-- Diperbaiki ke relative path -->
+                <img src="assets/profile.jpg" alt="Foto Profil" class="profile-img">
+                <h2 class="profile-name">Devi Nurul Fadhila</h2>
+                <p class="profile-role">Desainer Grafis</p>
+            </div>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#beranda" class="active">Beranda</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#portfolio">Portofolio</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <!-- Diperbaiki ke relative path -->
+                <a href="assets/cv.pdf" class="btn-cv" download>Unduh CV</a>
+                <button id="theme-toggle" class="btn-theme">Mode Gelap</button>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT AREA -->
+        <main class="main-content">
+            <!-- SECTION BERANDA -->
+            <section id="beranda" class="content-section">
+                <h1>Halo, Selamat Datang di Portofolio Saya</h1>
+                <p>Saya adalah seorang Desainer Grafis dan Penggiat Komunikasi Visual dengan pengalaman lebih dari 2 tahun dalam merancang berbagai solusi visual yang kreatif dan fungsional. Terbiasa menangani ragam proyek secara mandiri maupun tim, saya memiliki manajemen waktu yang baik untuk bekerja di bawah tekanan serta konsisten mengejar deadline tanpa mengorbankan kualitas estetika.</p>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>10+</h3>
+                        <p>Project Selesai</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>2+</h3>
+                        <p>Tahun Pengalaman</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION TENTANG -->
+            <section id="tentang" class="content-section">
+                <h2>Tentang Saya</h2>
+                <p>Saya memiliki minat yang mendalam di dunia kreatif, khususnya dalam mengeksplorasi estetika visual, tata letak, dan proses dokumentasi acara. Pengalaman saya sebagai staf Dekorasi & Dokumentasi di berbagai kegiatan serta rekam jejak sebagai desainer grafis paruh waktu telah mengasah kepekaan saya terhadap detail, konsistensi elemen visual, dan kebutuhan audiens. Bagi saya, setiap desain bukan hanya tentang keindahan visual, tetapi juga tentang cara menyampaikan pesan yang efektif.</p>
+            </section>
+
+            <!-- SECTION PORTOFOLIO -->
+            <section id="portfolio" class="content-section">
+                <h2>Portofolio / Proyek</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <!-- Diperbaiki ke relative path -->
+                        <img src="assets/project1.png" alt="ID Card keanggotaan" loading="lazy">
+                        <h3>ID Card Keanggotaan</h3>
+                        <p>Tanda identitas seseorang dalam organisasi.</p>
+                    </div>
+                    <div class="portfolio-card">
+                        <!-- Diperbaiki ke relative path -->
+                        <img src="assets/project2.jpeg" alt="Desain Produk UMKM" loading="lazy">
+                        <h3>Desain Produk UMKM</h3>
+                        <p>Desain promosi, diskon, atau launching produk baru.</p>
+                    </div>
+                    <div class="portfolio-card">
+                        <!-- Diperbaiki ke relative path -->
+                        <img src="assets/project3.jpeg" alt="Desain feeds instagram" loading="lazy">
+                        <h3>Desain Feeds Instagram</h3>
+                        <p>Desain feeds instagram untuk informasi pembelian produk.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION KONTAK -->
+            <section id="kontak" class="content-section">
+                <h2>Kontak Saya</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan:</label>
+                        <!-- Diperbaiki menggunakan tag textarea yang benar -->
+                        <textarea id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Kirim Pesan</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
